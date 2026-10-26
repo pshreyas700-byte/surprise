@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#24040b">
+<title>For Sanskriti ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&family=Patrick+Hand&display=swap');
+:root{--bg:#160208;--bg2:#28040d;--red:#ff234f;--cherry:#c80e37;--pink:#ff8ba5;--cream:#fff0e9;--muted:#d8aeb8;--line:rgba(255,112,145,.24);--glass:rgba(75,8,27,.58)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#651026 0,transparent 42%),linear-gradient(150deg,#180208,#26030d 52%,#100107);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid #fff;outline-offset:4px}
+#sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.spark{position:absolute;color:#ff8ca6;text-shadow:0 0 12px #ff234f;animation:twinkle 3s ease-in-out infinite}.float-heart{position:absolute;bottom:-50px;color:#ff3d68;opacity:.7;animation:rise linear infinite}
+@keyframes twinkle{0%,100%{opacity:.3;transform:scale(.75) rotate(-8deg)}50%{opacity:1;transform:scale(1.2) rotate(8deg)}}@keyframes rise{to{transform:translateY(-115vh) rotate(30deg);opacity:0}}@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #ff234f44,0 8px 25px #d20c3840}50%{box-shadow:0 0 0 9px #ff234f00,0 8px 35px #ff234f65}}@keyframes pop{0%{transform:scale(.75);opacity:0}75%{transform:scale(1.04)}100%{transform:scale(1);opacity:1}}@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-5deg)}75%{transform:rotate(5deg)}}@keyframes glow{0%,100%{text-shadow:0 0 10px #ff234f44}50%{text-shadow:0 0 26px #ff234fbb,0 0 45px #ff234f55}}
+main,.topbar,footer{position:relative;z-index:1}.topbar{display:flex;justify-content:space-between;align-items:center;max-width:1120px;margin:auto;padding:22px 24px}.brand{font-family:'Pacifico',cursive;color:#ff9db3;font-size:1.05rem}.music{border:1px solid var(--line);background:#390816;color:#ffe7ed;border-radius:999px;padding:9px 14px;font-size:.8rem}.music:hover{background:#651026}
+.hero{min-height:85vh;display:grid;place-items:center;text-align:center;padding:45px 20px 80px;position:relative}.hero-inner{max-width:760px}.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.7rem;color:#ff9ab0}.hero h1{font:clamp(3.4rem,10vw,7rem)/1.08 'Pacifico',cursive;color:#fff0ee;margin:18px 0;text-shadow:0 0 26px #ff315e75;animation:glow 4s ease-in-out infinite}.hero h1 span{color:#ff4c70}.subtitle{max-width:520px;margin:0 auto;color:#e9c7cf;line-height:1.8;font-size:1rem}.hero-art{font-size:clamp(4rem,12vw,7rem);margin:20px auto 18px;filter:drop-shadow(0 0 24px #f4265c55);animation:bob 4s ease-in-out infinite;letter-spacing:.06em}.cta,.yes-btn{border:0;color:white;background:linear-gradient(135deg,#ff4568,#ce0b39);border-radius:999px;padding:15px 25px;box-shadow:0 7px 25px #db103d45;transition:transform .2s,filter .2s;animation:pulse 3s infinite}.cta{margin-top:28px}.cta:hover,.yes-btn:hover{transform:translateY(-3px);filter:brightness(1.12)}.tiny{font-size:.78rem;color:#b98795;margin-top:15px}
+.section{max-width:1000px;margin:0 auto;padding:65px 22px}.section-head{text-align:center;margin-bottom:30px}.section-head .mini{color:#ff7696;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase}.section h2{font:clamp(2rem,5vw,3.2rem)/1.25 'Pacifico',cursive;margin:10px 0;color:#ffd9e2}.section-head p{color:var(--muted);line-height:1.7;margin:8px auto;max-width:580px}
+.panel{background:linear-gradient(145deg,rgba(86,10,33,.65),rgba(31,4,13,.8));border:1px solid var(--line);border-radius:28px;padding:clamp(24px,5vw,48px);box-shadow:0 20px 80px #08010555,inset 0 1px #ffffff08;backdrop-filter:blur(12px)}
+.question{max-width:700px;margin:auto;text-align:center}.duo{display:flex;align-items:center;justify-content:center;gap:12px;font-size:clamp(2.8rem,9vw,5rem);margin-bottom:12px;filter:drop-shadow(0 0 15px #ff234f50)}.duo span:first-child{animation:bob 3.2s ease-in-out infinite}.duo span:last-child{animation:bob 3.2s ease-in-out .5s infinite}.question h2{font:clamp(2.2rem,7vw,4rem)/1.2 'Patrick Hand',cursive;margin:12px 0;color:#fff0f3}.question h2 em{font-style:normal;color:#ff6c8e}.question p{color:#dcb8c3;line-height:1.7}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}.yes-btn{font-weight:700;padding:15px 32px}.maybe-btn{padding:14px 24px;border:1px solid #ff5577;background:transparent;color:#ffe6ec;border-radius:999px;transition:.2s}.maybe-btn:hover{background:#6d1029}.under-note{font:1rem 'Patrick Hand',cursive;color:#ff8ca6;margin-top:18px;min-height:24px}.result{display:none;margin:28px auto 0;padding:24px;max-width:510px;border-radius:22px;border:1px dashed #ff6586;background:#4c091c;text-align:center;animation:pop .45s ease both}.result.show{display:block}.result .big{font-size:2.7rem}.result h3{font:2rem 'Pacifico',cursive;margin:8px;color:#ffd7e1}.result p{color:#f0cbd5;line-height:1.7}.badge{display:inline-block;background:#d20c3b;padding:10px 17px;border-radius:8px;font-weight:700;transform:rotate(-2deg);margin:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.memory{padding:24px 20px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#420a1c99,#21040c99);min-height:205px;transition:transform .25s,border-color .25s}.memory:hover{transform:translateY(-6px) rotate(-.5deg);border-color:#ff6b8c}.memory .icon{font-size:2rem}.memory h3{font:1.4rem 'Patrick Hand',cursive;color:#ffdce5;margin:12px 0 7px}.memory p{font-size:.88rem;line-height:1.65;color:#d7b0bb;margin:0}.stamp{display:inline-block;font-size:.65rem;letter-spacing:.12em;color:#ff9bb0;border:1px dashed #ff6a89;border-radius:5px;padding:4px 7px;margin-top:16px}
+.note-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}.letter{background:#ffe5df;color:#54101e;border-radius:8px 20px 8px 20px;padding:clamp(22px,4vw,38px);position:relative;box-shadow:7px 10px 0 #750d2b55;transform:rotate(-1deg)}.letter:before{content:'♡';position:absolute;right:18px;top:10px;color:#e23a5d;font-size:2rem}.letter h3{font:clamp(1.7rem,4vw,2.3rem) 'Pacifico',cursive;color:#9e1536;margin:0 0 18px}.letter p{font:1.13rem/1.7 'Patrick Hand',cursive;margin:0 0 12px}.letter .sign{font:1.3rem 'Pacifico',cursive;color:#b5163e;text-align:right;margin-top:22px}.side-card{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:28px;border:1px solid var(--line);border-radius:24px;background:#33071688}.side-card .big-heart{font-size:5rem;animation:bob 3s infinite;filter:drop-shadow(0 0 18px #ff234f77)}.side-card h3{font:1.8rem 'Pacifico',cursive;color:#ffc8d6}.side-card p{color:#d9b4bf;line-height:1.7}
+.extras{display:grid;grid-template-columns:1fr 1fr;gap:16px}.extra{border:1px solid var(--line);border-radius:20px;padding:22px;background:#350715aa}.extra h3{font:1.35rem 'Patrick Hand',cursive;color:#ffb8c8;margin:0 0 8px}.extra p{color:#dcbac4;font-size:.88rem;line-height:1.6}.small-btn{background:#6d1029;border:1px solid #ff6486;border-radius:999px;padding:10px 14px;color:#ffe8ed}.small-btn:hover{background:#a51036}.hidden-message{display:none;margin-top:12px;color:#fff0f4;line-height:1.65;font-size:.9rem}.hidden-message.show{display:block;animation:pop .35s ease}
+.final{text-align:center;min-height:360px;display:grid;place-items:center;background:radial-gradient(ellipse at center,#600e26aa,transparent 70%)}.final .art{font-size:clamp(3.5rem,10vw,6rem);animation:bob 4s infinite}.final h2{font:clamp(2.4rem,7vw,4.5rem) 'Pacifico',cursive;color:#fff0f3;animation:glow 4s infinite}.final p{max-width:540px;margin:0 auto;color:#e4bec8;line-height:1.8}.final .cta{margin-top:25px}
+footer{text-align:center;padding:35px 20px 55px;color:#9f7180;font-size:.78rem}footer span{color:#ff6688}
+.confetti{position:fixed;top:-20px;z-index:10;pointer-events:none;animation:fall 2.7s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(700deg);opacity:0}}
+@media(max-width:700px){.topbar{padding:17px 18px}.hero{min-height:80vh;padding-top:30px}.grid{grid-template-columns:1fr}.memory{min-height:auto}.note-layout{grid-template-columns:1fr}.letter{transform:none}.extras{grid-template-columns:1fr}.section{padding:48px 16px}.panel{border-radius:22px}.duo{margin-bottom:8px}.question .panel{padding:24px 17px}.hero-art{margin:14px auto}.subtitle{font-size:.93rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div>
+<header class="topbar"><div class="brand">a tiny thing for Sanskriti ♡</div><button class="music" id="musicBtn" aria-label="Toggle ambient sound">♫ Sound: off</button></header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">✦ a little online-friendship magic ✦</div>
+    <div class="hero-art" aria-hidden="true">🐈‍⬛　💗　🐈</div>
+    <h1>Hey,<br><span>Sanskriti!</span></h1>
+    <p class="subtitle">We met online… but somehow, you've already made my days a little brighter. ♡<br>It's been 9 days, and I wanted to make you a tiny something just because.</p>
+    <button class="cta" onclick="document.querySelector('#question').scrollIntoView({behavior:'smooth'})">Okay, there's a tiny question… ↓</button>
+    <div class="tiny">made with a little courage, a lot of cherry red &nbsp;♥</div>
+  </div>
+</section>
+<section class="section" id="question">
+  <div class="panel question">
+    <div class="duo" aria-hidden="true"><span>🧸</span><span>🐰</span></div>
+    <div class="eyebrow">important bestie business</div>
+    <h2>Sanskriti…<br>will you be my <em>Best Friend?</em> ♡</h2>
+    <p>No pressure, just good vibes, random talks, silly jokes, and hopefully lots of lovely memories. ✨</p>
+    <div class="buttons"><button class="yes-btn" id="yesBtn">YESSS, BESTIE! ♥</button><button class="maybe-btn" id="maybeBtn">Hmm, maybe? 👀</button></div>
+    <div class="under-note" id="buttonNote">Psst… both answers are allowed. The friendship committee is very chill.</div>
+    <div class="result" id="result" aria-live="polite"><div class="big">🎉💗✨</div><h3>BESTIE STATUS: UNLOCKED!</h3><div class="badge">FRIENDSHIP LEVEL 1 🔓</div><p>YAYYYY, Sanskriti!! I'm really glad our paths crossed. Here's to random conversations, inside jokes we haven't invented yet, and a friendship that gets sweeter with time. 🫶</p><button class="small-btn" onclick="document.querySelector('#starter').scrollIntoView({behavior:'smooth'})">Unlock your friendship starter pack ↓</button></div>
+  </div>
+</section>
+<section class="section" id="starter">
+  <div class="section-head"><div class="mini">chapter one · just getting started</div><h2>Our Friendship Starter Pack ♡</h2><p>Some things we might collect along the way. No rush, just little moments that become ours.</p></div>
+  <div class="grid">
+    <article class="memory"><div class="icon">💬</div><h3>Random Talks</h3><p>From serious life talks to the most unserious 2 AM thoughts. All topics welcome.</p><span class="stamp">IN PROGRESS</span></article>
+    <article class="memory"><div class="icon">🤭</div><h3>Inside Jokes to Come</h3><p>The kind that make absolutely no sense to anyone else. Our future comedy archive.</p><span class="stamp">LOADING…</span></article>
+    <article class="memory"><div class="icon">🌙</div><h3>One Day… IRL?</h3><p>Maybe one day we get to say hi in person. Until then, online friendship counts too.</p><span class="stamp">A LITTLE DAYDREAM</span></article>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head"><div class="mini">written with a tiny smile</div><h2>A little note for you…</h2></div>
+  <div class="note-layout">
+    <article class="letter"><h3>Dear Sanskriti, ♡</h3>
+      <p>It's honestly funny how we met online just 9 days ago, and here I am making a whole little website for you. hehe.</p>
+      <p>We haven't met in real life yet, but I'm really glad our paths crossed. I don't know what the future holds, but I hope we get to share lots of laughs, random conversations, silly moments and beautiful memories.</p>
+      <p>Here's to our little online friendship becoming something we can look back on someday and smile about. One conversation at a time. ♡</p>
+      <p>And if you ever have a rough day, I hope this tiny cherry-red corner of the internet makes you smile, even for a second.</p>
+      <div class="sign">— Your new bestie (hopefully hehe) ♥</div>
+    </article>
+    <aside class="side-card"><div class="big-heart">❤️‍🔥</div><h3>Better together</h3><p>Different screens, same little planet. Here's to kindness, laughter, and letting a friendship grow naturally.</p><div style="font-size:1.8rem">✦ ♡ ✦</div></aside>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head"><div class="mini">bonus level</div><h2>Quick little extras ✨</h2><p>Because every cute surprise needs a couple of hidden things.</p></div>
+  <div class="extras">
+    <article class="extra"><h3>🎧 Our imaginary playlist</h3><p>For late-night chats, study breaks, random moods, and the “listen to this song!” moments.</p><button class="small-btn" id="playlistBtn">Reveal playlist mood ♫</button><div class="hidden-message" id="playlistMsg">Track 01: a happy song ☀️ · Track 02: a dramatic overthinking anthem 🌙 · Track 03: the song we both randomly get obsessed with 💿</div></article>
+    <article class="extra"><h3>💌 One last thing…</h3><p>Tap if you're ready for the secret message. No dramatic background music required (unless you imagine some).</p><button class="small-btn" id="secretBtn">Open secret message ♡</button><div class="hidden-message" id="secretMsg">Sanskriti, you're pretty cool. Thank you for being you. I'm happy we met, and I hope we keep getting to know each other, one silly conversation at a time. — Your internet bestie ♥</div></article>
+  </div>
+</section>
+<section class="section final">
+  <div><div class="art">🌃　🐈‍⬛　♡　🐈</div><div class="eyebrow">end of the tiny website · start of the story</div><h2>Keep Shining, Sanskriti.</h2><p>Thanks for being here. Whatever this friendship becomes, I'm glad this little online hello happened. Here's to more smiles, more stories, and good things ahead. ♥</p><button class="cta" id="againBtn">Replay the little magic ↻</button></div>
+</section>
+</main>
+<footer>crafted with <span>♥</span>, cherry red, and a little internet magic · just for Sanskriti</footer>
+<script>
+const sky=document.getElementById('sky');
+for(let i=0;i<46;i++){const s=document.createElement('span');s.className='spark';s.textContent=['✦','·','♡','✧'][Math.floor(Math.random()*4)];s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.fontSize=(8+Math.random()*15)+'px';s.style.animationDelay=(Math.random()*4)+'s';s.style.animationDuration=(2+Math.random()*4)+'s';sky.appendChild(s)}
+for(let i=0;i<13;i++){const h=document.createElement('span');h.className='float-heart';h.textContent=['♡','♥','✧'][i%3];h.style.left=Math.random()*100+'%';h.style.fontSize=(13+Math.random()*18)+'px';h.style.animationDuration=(13+Math.random()*16)+'s';h.style.animationDelay=(-Math.random()*22)+'s';sky.appendChild(h)}
+const result=document.getElementById('result'),note=document.getElementById('buttonNote');
+function celebrate(){result.classList.add('show');note.textContent='SHE SAID YESSS—okay, tiny celebration time!! ♡';result.scrollIntoView({behavior:'smooth',block:'center'});for(let i=0;i<75;i++){const c=document.createElement('span');c.className='confetti';c.textContent=['♥','✦','♡','✧','★'][Math.floor(Math.random()*5)];c.style.left=Math.random()*100+'vw';c.style.color=['#ff315e','#ffb3c3','#fff0e9','#d80d3d'][Math.floor(Math.random()*4)];c.style.fontSize=(12+Math.random()*19)+'px';c.style.animationDelay=(Math.random()*.7)+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),3500)}}
+document.getElementById('yesBtn').addEventListener('click',celebrate);
+document.getElementById('maybeBtn').addEventListener('click',()=>{note.textContent='Totally okay! No pressure at all. Friendship grows at its own pace. ♡';document.getElementById('maybeBtn').animate([{transform:'rotate(0)'},{transform:'rotate(-4deg)'},{transform:'rotate(4deg)'},{transform:'rotate(0)'}],{duration:420});});
+function toggle(id){document.getElementById(id).classList.toggle('show')}
+document.getElementById('playlistBtn').addEventListener('click',()=>toggle('playlistMsg'));
+document.getElementById('secretBtn').addEventListener('click',()=>toggle('secretMsg'));
+document.getElementById('againBtn').addEventListener('click',()=>{result.classList.remove('show');note.textContent='Psst… both answers are allowed. The friendship committee is very chill.';document.querySelector('#home').scrollIntoView({behavior:'smooth'});});
+/* Optional gentle chime generated locally; no audio files or external libraries needed. */
+let audioCtx=null, soundOn=false;
+document.getElementById('musicBtn').addEventListener('click',async()=>{const btn=document.getElementById('musicBtn');soundOn=!soundOn;btn.textContent=soundOn?'♫ Sound: on':'♫ Sound: off';if(soundOn){try{audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')await audioCtx.resume();[523.25,659.25,783.99].forEach((freq,i)=>{const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=freq;gain.gain.setValueAtTime(.0001,audioCtx.currentTime+i*.18);gain.gain.exponentialRampToValueAtTime(.045,audioCtx.currentTime+i*.18+.04);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+i*.18+.5);osc.connect(gain);gain.connect(audioCtx.destination);osc.start(audioCtx.currentTime+i*.18);osc.stop(audioCtx.currentTime+i*.18+.52)})}catch(e){btn.textContent='♫ Sound unavailable'}}});
+</script>
+</body>
+</html>
